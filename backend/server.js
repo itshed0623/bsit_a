@@ -21,8 +21,19 @@ let users = [
     }
 ]
 
+let random = [
+    {
+        id: 1,
+        number: 0
+    }
+]
+
 app.get('/api/user', (req, res) => {
     res.json(users);
+})
+
+app.get('/api/random', (req, res) => {
+    res.json(random);
 })
 
 
