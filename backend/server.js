@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const app = express();
 
-
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cors());
@@ -26,6 +26,6 @@ app.get('/api/user', (req, res) => {
 })
 
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log('Server running 8080');
 })   
