@@ -4,7 +4,7 @@ export default function Sample() {
     
     const [ isEditModalOpen, setIsEditModalOpen ] = useState(false);
     const [ users, setUsers ] = useState([]);
-    const API_URL = 'http://localhost:8080/api/user';
+    const API_URL = 'https://bsit-a.onrender.com/api/user';
 
     useEffect(() => {
         fetch(API_URL).then((response) => response.json()).then((data) => {
